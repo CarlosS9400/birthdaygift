@@ -5,14 +5,16 @@ body {
     font-weight: bold;
     text-align: center;
     font-family: "Happy Monkey", system-ui;
+    
 }
 
 main {
-    
+    background: gray;
     position: relative;
     max-width: 900px;
-    width: 90vw;
-    height: 90vh;
+    width: 65%;
+    height: auto;
+    box-sizing: border-box;
 
     margin: 3em auto;
 }
@@ -20,11 +22,12 @@ main {
 .first {
     background: cyan;
     position: absolute;
-    top: 50;
-    left: 20;
+    top: 20;
+    left: 0;
     width: 40vw;
     height: 40vh;
     border-radius: 10%;
+    box-sizing: border-box;
     
 }
 
@@ -37,13 +40,19 @@ main {
 .second {
     background-image: linear-gradient(180deg, red, yellow);
     position: absolute;
-    top: 170;
-    left: 40;
+    top: 140;
+    left: 25;
     width: 50vw;
-    height: 40vh;
+    height: auto;
     border-radius: 10%;
     
-    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+
+    box-sizing: border-box;
 }
 
 .second h1 {
@@ -82,12 +91,16 @@ button {
 #increment-btn {
     background: darkturquoise;
     border-radius: 10%;
-    height: 5vh;
+    height: 7vh;
+    max-width: 180px;
+    padding: 0.5em;
 }
 
 #save-btn {
     background: darkorchid;
     border-radius: 10%;
-    height: 5vh;
+    height: 7vh;
+    max-width: 180px;
+    padding: 0.5em;
 }
 
